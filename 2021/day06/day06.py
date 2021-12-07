@@ -34,7 +34,7 @@ days=80
 print(days,'days:',evolve(fish_dist, days))
 
 dt = time.time()-t0
-print("done in",dt,"sec")
+print("done in",dt/1E-6,"µs")
 
 # Part 2
 t0 = time.time()
@@ -43,4 +43,4 @@ print(days,'days:',evolve(fish_dist, days))
 
 dt = time.time()-t0
 
-print("done in",dt,"sec")
+print("done in",dt/1E-6,"µs")
