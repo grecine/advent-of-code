@@ -1,8 +1,12 @@
 import numpy as np
 import pandas as pd
 import time as time
+import os
 
 def go_fish(fname):
+    day_dir = os.path.realpath(__file__).split('/')[:-1]
+    fname = os.path.join('/',*day_dir, fname)
+    
     fish = np.array(pd.read_csv(fname).iloc[:,0].tolist())
 
     # Initalize fish counts

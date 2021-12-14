@@ -1,8 +1,10 @@
-import pandas as pd
 import time
 import os
 
 def get_commands(fname):
+    day_dir = os.path.realpath(__file__).split('/')[:-1]
+    fname = os.path.join('/',*day_dir, fname)
+
     commands = []
     with open(fname) as f:
         for line in f:
@@ -36,8 +38,8 @@ def part2(coms):
 
     print('Part 2:',pos[0]*pos[1])
 
-# fname = '2021/day02/test-input.csv'
-fname = '2021/day02/input.csv'
+# fname = 'test-input.csv'
+fname = 'input.csv'
 
 commands = get_commands(fname)
 

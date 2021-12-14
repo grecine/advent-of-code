@@ -41,8 +41,10 @@ def solve(vents, part):
 # fname = 'test-input.csv'
 fname = 'input.csv'
 
-df = pd.read_csv(fname)
-vents = df.values
+day_dir = os.path.realpath(__file__).split('/')[:-1]
+fname = os.path.join('/',*day_dir, fname)
+
+vents = pd.read_csv(fname).values
 
 solve(vents, 1)
 

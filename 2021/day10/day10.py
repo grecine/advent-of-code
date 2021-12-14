@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import time
-
+import os
 
 pair = {')': ('(',3), ']': ('[',57), '}': ('{',1197), '>':('<',25137) }
 ket = {'(': ')', '[': ']', '{': '}', '<': '>',}
@@ -35,6 +35,9 @@ def brak_cnt(line, n):
 
 # fname = 'test-input.txt'
 fname = 'input.txt'
+
+day_dir = os.path.realpath(__file__).split('/')[:-1]
+fname = os.path.join('/',*day_dir, fname)
 nav_sub = pd.read_csv(fname, sep=',', header=None).iloc[:,0].tolist()
 
 # Part 1

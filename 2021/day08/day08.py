@@ -1,5 +1,6 @@
 import pandas as pd
 import time
+import os
 
 decoder = {
     'a': ([0,2,3,5,6,7,8,9], [1,4]),
@@ -75,7 +76,10 @@ def calc_map(s):
 # fname = 'test-input.txt'
 fname = 'input.txt'
 
+day_dir = os.path.realpath(__file__).split('/')[:-1]
+fname = os.path.join('/',*day_dir, fname)
 df = pd.read_csv(fname, sep=' ', header=None)
+
 signals = df.loc[:,0:9]
 outputs = df.loc[:,11:]
 

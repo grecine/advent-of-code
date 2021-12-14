@@ -1,10 +1,14 @@
 import pandas as pd
 import numpy as np
+import os
 import time
 
 np.set_printoptions(threshold=np.inf)
 
 def input(fname):
+    day_dir = os.path.realpath(__file__).split('/')[:-1]
+    fname = os.path.join('/',*day_dir, fname)
+
     data = []
     with open(fname) as f:
         for line in f:
@@ -39,19 +43,22 @@ def do_steps(pairs, rules, n):
     max_ele = max(elem_count, key=elem_count.get)
     print(int(elem_count[max_ele] - elem_count[min_ele]))
 
-# rules = input('test-input.txt')
 rules = input('input.txt')
+rules = input('test-input.txt')
+
 seed = rules[0]
 rules = {d.split(' ')[0]: d.split(' ')[2] for d in rules[2:]}
 
 unique_pairs = set([seed[i]+seed[i+1] for i in range(len(seed)-1)])
 pairs = [(p, list(unique_pairs).count(p)) for p in unique_pairs]
 
+# part 1
 t0 = time.time()
 print('Part 1:')
 do_steps(pairs, rules, 10)
 print('Elapsed time:',time.time()-t0,' sec')
 
+# part 2
 t0 = time.time()
 print('\nPart 2:')
 do_steps(pairs, rules, 40)

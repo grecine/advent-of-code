@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+import os
 
 def low(a,i,j):
 
@@ -75,6 +75,9 @@ def calc_basin(cave, low_point):
 
 # fname = 'test-input.txt'
 fname = 'input.txt'
+
+day_dir = os.path.realpath(__file__).split('/')[:-1]
+fname = os.path.join('/',*day_dir, fname)
 cave = np.array(pd.read_csv(fname, sep=',', header=None))
 
 # Part 1

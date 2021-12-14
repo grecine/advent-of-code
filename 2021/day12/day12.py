@@ -1,8 +1,12 @@
 import pandas as pd
 import numpy as np
 import time
+import os
 
 def input(fname):
+    day_dir = os.path.realpath(__file__).split('/')[:-1]
+    fname = os.path.join('/',*day_dir, fname)
+
     data = []
     with open(fname) as f:
         for line in f:

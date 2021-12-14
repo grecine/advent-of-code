@@ -1,8 +1,12 @@
 import pandas as pd
 import numpy as np
 import time
+import os
 
 def input(fname):
+    day_dir = os.path.realpath(__file__).split('/')[:-1]
+    fname = os.path.join('/',*day_dir, fname)
+
     data = []
     with open(fname) as f:
         for line in f:
@@ -58,23 +62,27 @@ class Octopus:
                     if (0 < self.octoloc[x]):
                         self.octoloc[x] = self.octoloc[x] + 1
         
-        cnt = len(np.where(oct.octoloc==0)[0])
+        cnt = len(np.where(self.octoloc==0)[0])
         self.sync = True if cnt == self.size else False
         self.count += cnt
 
-# fname = 'test-input.txt'
-fname = 'input.txt'
-check = 100
+def main():
+    # fname = 'test-input.txt'
+    fname = 'input.txt'
+    check = 100
 
-oct = Octopus(input(fname))
+    oct = Octopus(input(fname))
 
-t0 = time.time()
-sync = oct.sync
-while not sync:
-    oct.step()
-    if oct.iter == check:
-        print('Step '+str(check)+' flash total: '+str(oct.count))
+    t0 = time.time()
     sync = oct.sync
+    while not sync:
+        oct.step()
+        if oct.iter == check:
+            print('Step '+str(check)+' flash total: '+str(oct.count))
+        sync = oct.sync
 
-print('First sync at: '+str(oct.iter))
-print('Elapsed time {:.3e}'.format(time.time()-t0)+' sec')
+    print('First sync at: '+str(oct.iter))
+    print('Elapsed time {:.3e}'.format(time.time()-t0)+' sec')
+
+if __name__ == "__main__":
+    main()
