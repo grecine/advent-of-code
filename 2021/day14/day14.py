@@ -1,4 +1,3 @@
-import pandas as pd
 import numpy as np
 import os
 import time
@@ -44,7 +43,7 @@ def do_steps(pairs, rules, n):
     print(int(elem_count[max_ele] - elem_count[min_ele]))
 
 rules = input('input.txt')
-rules = input('test-input.txt')
+# rules = input('test-input.txt')
 
 seed = rules[0]
 rules = {d.split(' ')[0]: d.split(' ')[2] for d in rules[2:]}
