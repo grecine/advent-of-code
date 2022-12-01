@@ -1,9 +1,7 @@
-github.com/adam-lavrik/go-imath v0.0.0-20210910152346-265a42a96f0b h1:g9SuFmxM/WucQFKTMSP+irxyf5m0RiUJreBDhGI6jSA=
-github.com/adam-lavrik/go-imath v0.0.0-20210910152346-265a42a96f0b/go.mod h1:XjvqMUpGd3Xn9Jtzk/4GEBCSoBX0eB2RyriXgne0IdM=
 github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af/go.mod h1:K08gAheRH3/J6wwsYMMT4xOr94bZjxIelGM0+d/wbFw=
 github.com/albrow/stringset v2.1.0+incompatible/go.mod h1:ltP0XRz96SPEM8ofD1BaE4IpTR2uCGSk6Z2VRfh1Llw=
-github.com/bogosj/advent-of-code v0.0.0-20211207162437-eac80ac8bbf3 h1:R8Rr0Ysyl3YQ/v6q+LG01adC77HBd8iPiclVcJ+6mMY=
-github.com/bogosj/advent-of-code v0.0.0-20211207162437-eac80ac8bbf3/go.mod h1:5L6Fix+d+LXP48c7g1TldX5suugu7A6R4+Q3p+za1VU=
+github.com/bogosj/advent-of-code v0.0.0-20211214143024-237d89662d31 h1:1kasLjCU8hFFqH6keHwpFstrVxoXhP66flOw7xtNvoc=
+github.com/bogosj/advent-of-code v0.0.0-20211214143024-237d89662d31/go.mod h1:5L6Fix+d+LXP48c7g1TldX5suugu7A6R4+Q3p+za1VU=
 github.com/bogosj/stringset v0.0.0-20160903143730-b4da118f1741/go.mod h1:QQ9HY1+NNdQtZJQ5lRDAuuzbs3KiW7C5vnHqfLh8p0o=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fogleman/gg v1.2.1-0.20190220221249-0403632d5b90/go.mod h1:R/bRT+9gY/C5z7JzPU0zXsXHKM4/ayA+zqcVNZzPa1k=
