@@ -33,8 +33,8 @@ def make_sums(data):
     return [elf_sum[len(elf_sum) - (i + 1)] for i in range(3)]
 
 
-# input_data = get_input('input.txt')
-input_data = get_input('test-input.txt')
+input_data = get_input('input.txt')
+# input_data = get_input('test-input.txt')
 
 
 def part1(data):

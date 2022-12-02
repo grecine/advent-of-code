@@ -21,7 +21,7 @@ def part1(data):
     # do stuff
     pass
 
-def part1(data):
+def part2(data):
     # do stuff
     pass
 
