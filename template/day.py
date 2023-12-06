@@ -16,7 +16,7 @@ def part2(data):
 
 
 def main():
-    # data = aoc_tools.utils.read_input('input.txt')
+    # data = aoctools.utils.read_input('input.txt')
     data = aoc_tools.utils.read_input('test-input.txt')
 
     # part 1

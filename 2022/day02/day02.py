@@ -60,7 +60,7 @@ def part2(data):
 
 def main():
     data = aoc_tools.utils.read_input(os.path.join(os.getcwd(), 'input.txt'))
-    # data = aoc_tools.utils.read_input(os.path.join(os.getcwd(),'input.txt'))
+    # data = aoctools.utils.read_input(os.path.join(os.getcwd(),'input.txt'))
 
     # part 1
     t0 = time.time()
