@@ -1,11 +1,11 @@
 import numpy as np
 import os
 import time
-import aoc_tools.utils
+import aoctools.utils
 
 np.set_printoptions(threshold=np.inf)
 
-rpss = aoc_tools.utils.rpss()
+rpss = aoctools.utils.rpss()
 
 decoder1 = {
     'A': rpss.rock,
@@ -59,7 +59,7 @@ def part2(data):
 
 
 def main():
-    data = aoc_tools.utils.read_input(os.path.join(os.getcwd(), 'input.txt'))
+    data = aoctools.utils.read_input(os.path.join(os.getcwd(), 'input.txt'))
     # data = aoctools.utils.read_input(os.path.join(os.getcwd(),'input.txt'))
 
     # part 1

@@ -23,13 +23,13 @@ def main():
     t0 = time.time()
     print('Part 1:')
     part1(data)
-    print('Elapsed time:',(time.time()-t0)*1E3,' ms')
+    print('Elapsed time:',time.time()-t0,' sec')
 
     # part 2
     t0 = time.time()
     print('\nPart 2:')
     part2(data)
-    print('Elapsed time:',(time.time()-t0)*1E3,' ms')
+    print('Elapsed time:',time.time()-t0,' sec')
 
 if __name__ == "__main__":
     main()
