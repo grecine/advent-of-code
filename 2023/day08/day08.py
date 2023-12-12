@@ -10,7 +10,6 @@ def part1(data):
     # do stuff
     pass
 
-
 def part2(data):
     # do stuff
     pass
@@ -31,7 +30,6 @@ def main():
     print('\nPart 2:')
     part2(data)
     print('Elapsed time:',(time.time()-t0)*1E3,' ms')
-
 
 if __name__ == "__main__":
     main()
